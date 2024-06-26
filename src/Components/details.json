@@ -1,0 +1,91 @@
+[
+    {
+      "id": 1,
+      "image":
+        "https://blog.phixer.net/wp-content/uploads/2017/09/21.jpg",
+      "address": "12 Bright street , NYC",
+      "description": "Fully Furnished , east-facing , 3 Bedroom , 2 Bathroom",
+      "price": "$600,000",
+      "highlights":["Gymnasium","Power Backup"],
+      "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
+    },
+
+   {
+      "id": 2,
+      "image":
+        "http://iranwatsonphoto.com/wp-content/uploads/2011/11/3445-Cypress-Club-Trl-Exterior-Front-Twilight-blue-sky.jpg",
+      "address": "1021 st Apt , NYC",
+      "description": "Fully Furnished , North-facing ,2 Bedroom,1 Bathroom",
+      "price": "$530,000",
+      "highlights":["Gymnasium","Power Backup","24x7 Security","Swimming Pool"],
+      "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"}]
+    },
+   {
+      "id": 3,
+      "image":
+        "https://digitalshiftagency.com/wp-content/uploads/real-estate-images.jpg",
+      "address": "24 Anvenue ,Queens ,NYC",
+      "description": "Fully Furnished , North-facing ,4 Bedroom,2 Bathroom",
+      "price": "$300,000",
+      "highlights":["Gymnasium","Power Backup","Swimming Pool"],
+      "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
+    },
+   {
+      "id": 4,
+      "image":
+        "https://images.pexels.com/photos/259597/pexels-photo-259597.jpeg?cs=srgb&dl=architecture-estate-facade-259597.jpg&fm=jpg",
+      "address": "634B,TowerHigh Buildings",
+      "description": "Loft Bedroom , Fully-Furnished , 2 Bathroom , Open Balcony",
+      "price": " $365,000",
+      "highlights":["Power Backup","24x7 Security","Swimming Pool"],
+      "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"}]
+    },
+    {
+      "id": 5,
+      "image":
+        "http://trumpwallpapers.com/wp-content/uploads/Real-Estate-Wallpaper-22-4576x3132-1-scaled.jpg",
+      "address": "Malamala Beach",
+      "description":
+        " Loft Bedroom , Fully-Furnished , 2 Bathroom , Open Balcony",
+      "price": "$557,000",
+      "highlights":["Gymnasium","Power Backup","24x7 Security","Swimming Pool"],
+      "amenities":[{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
+    },
+   {
+      "id": 6,
+      "image":
+        "https://trumpwallpapers.com/wp-content/uploads/Real-Estate-Wallpaper-33-1920x1080-1-1536x864.jpg",
+      "address": "#34B ,Queens , NYC",
+      "description": "Loft Bedroom , Fully-Furnished , 2 Bathroom , Open Balcony",
+      "price": "400,000",
+      "highlights":["Gymnasium","Power Backup","24x7 Security"],
+      "amenities":[{"name" : "Servent Room" ,"icon": "fa-person-booth"}]
+    },
+  {
+      "id": 7,
+      "image": "https://wallpaperaccess.com/full/1899390.jpg",
+      "address" : "austine",
+      "description" : "Loft Bedroom , Fully-Furnished , 2 Bathroom , Open Balcony",
+      "price" : "$560,000",
+      "highlights":["Gymnasium","Power Backup","24x7 Security","Swimming Pool"],
+      "amenities":[{"name":"Car Parking","icon":" fa-car"}]
+    },
+   {
+      "id": 8,
+      "image": "https://guardian.ng/wp-content/uploads/2020/06/real-estate.jpg",
+      "address" : "brooklyn",
+      "description" : "Loft Bedroom , Fully-Furnished , 2 Bathroom , Open Balcony",
+      "price" :" $600,000",
+      "highlights":["Gymnasium","Power Backup","24x7 Security"],
+      "amenities":[{"name":"Car Parking","icon":" fa-car"}]
+    },
+   {
+      "id": 9,
+      "image": "http://dannybatista.com/wp-content/uploads/2017/09/austin-photo-real-estate-twilight-photography-cold-springs-4.jpg",
+      "address" : "NYC",
+      "description" : "Fully Furnished , North-facing ,2 Bedroom,1 Bathroom",
+      "price" :" $589,000",
+      "highlights":["Gymnasium","Power Backup","24x7 Security","Swimming Pool"],
+      "amenities":[{"name":"Car Parking","icon":" fa-car"},{"name" : "Servent Room" ,"icon": "fa-person-booth"}]
+    }
+]
