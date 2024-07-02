@@ -10,6 +10,8 @@ import Evaluation from './Components/Layout/evaluation';
 import Accessibility from './Components/Layout/accessibility';
 import About from './Components/Layout/about';
 import Dmca from './Components/Layout/dmca';
+import Landing from './Components/Layout/landing';
+import Filter from './Components/Layout/filter';
 import SignIn from './Components/Layout/signin'
 import Footer from './Components/Layout/footer'
 import 'bootstrap';
@@ -22,8 +24,6 @@ function App() {
     
     <>
     <NavBar />
- 
-   
     <BrowserRouter>
       <Routes>
      <Route path="/home" element={<Home />}></Route> 
@@ -36,6 +36,8 @@ function App() {
       <Route path="/accessibility" element={<Accessibility/>}></Route>
       <Route path="/about" element={<About/>}></Route>
       <Route path="/dmca" element={<Dmca/>}></Route>
+      <Route path="/landing" element={<Landing/>}></Route>
+      <Route path="/filter" element={<Filter/>}></Route>
 
        
       </Routes>

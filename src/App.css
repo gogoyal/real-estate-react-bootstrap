@@ -49,3 +49,22 @@
 .caraosel{
   max-height: 80vh;
 }
+.landing{
+  /* background-image: url(https://hudsonpoint.com/wp-content/uploads/real-estate-bg.jpg); */
+  background-image: url(https://cdn.wallpapersafari.com/63/95/eoWg92.jpg);
+ height: 600px;
+ background-size: cover;
+ 
+}
+.condo{
+ width: 1200px;
+ height: 600px;
+  /* background-image: url(Components/Layout/condobackground.webp); */
+  background-size: cover;
+  background-image:
+  linear-gradient(45deg,
+      rgba(174, 159, 159, 0.3),
+      rgba(158, 174, 182, 0.3)), 
+        url(Components/Layout/condobackground.webp);
+ 
+}

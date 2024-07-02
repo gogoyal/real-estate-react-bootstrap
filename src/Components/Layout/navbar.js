@@ -22,7 +22,7 @@ export default function NavBar() {
         className=""
       >
         <Container>
-          <Navbar.Brand href="/" className="text-white">
+          <Navbar.Brand href="/landing" className="text-white">
             <i className="fas fa-gem me-3"></i>TheEstate
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -40,7 +40,7 @@ export default function NavBar() {
               <Nav.Link href="/contact" className="text-white">
                 Contact us
               </Nav.Link>
-              <Nav.Link href="/contact" className="text-white">
+              <Nav.Link href="/filter" className="text-white">
                 Filter By Name
               </Nav.Link>
               <NavDropdown title="Sign Up" id="basic-nav-dropdown">
