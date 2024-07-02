@@ -56,7 +56,7 @@ export default function Filter() {
                 <Card className="rounded-0 m-1 border-0">
                   <CardImg variant="top" src={Condo1} className="p-2"></CardImg>
                   <CardTitle>hi</CardTitle>
-                  <CardBody>hi</CardBody>
+                  <CardBody>hbujuy</CardBody>
                 </Card>
               </Col>
               <Col lg="6">
