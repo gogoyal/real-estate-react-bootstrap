@@ -10,13 +10,23 @@ import {
 } from "react-bootstrap";
 import AboutCard from "./aboutuscard";
 import Condo1 from "./condo1.jpg";
+import Condo2 from "./condo2.jpg";
 
 export default function Filter() {
+  const condoDetails = require("../Layout/condos.json");
+  const images = [
+    {
+      img: Condo1,
+    },
+    {
+      img: Condo2,
+    },
+  ];
   return (
     <>
-      <Container fluid className="border">
+      <Container fluid className="">
         <Row>
-          <div className="text-center condo d-flex align-items-center justify-content-center">
+          <div className="text-center text-white condo d-flex align-items-center justify-content-center">
             <h1 className=" display-1 fw-bold">Condos For Sale</h1>
           </div>
           <Col sm="8" className=" p-5">
@@ -52,25 +62,24 @@ export default function Filter() {
               </Dropdown>{" "}
             </div>
             <Row className="p-3 m-4">
-              <Col lg="6">
-                <Card className="rounded-0 m-1 border-0">
-                  <CardImg variant="top" src={Condo1} className="p-2"></CardImg>
-                  <CardTitle>hi</CardTitle>
-                  <CardBody>hbujuy</CardBody>
-                </Card>
-              </Col>
-              <Col lg="6">
-                {" "}
-                <Card className="rounded-0 m-1 border-0">
-                  <CardImg variant="top" src={Condo1} className="p-2"></CardImg>
-                  <CardTitle className="text-center">
-                    6240 Estero Boulevard UNIT 4 PH, Fort Myers Beach, FL, 33931
-                  </CardTitle>
-                  <CardBody>$5,200,000 / 4 BEDS / 5 BATHS</CardBody>
-                </Card>
-              </Col>
-              <Col lg="6">hi</Col>
-              <Col lg="6">hi</Col>
+              {condoDetails.map((items, index) => {
+                return (
+                  <Col key={index} lg="6">
+                    <Card className="rounded-0 m-1 border-0 p-2">
+                      
+                          <CardImg
+                            variant="top"
+                            src={items.image}
+                            className=" cardimg"
+                          ></CardImg>
+                      
+
+                      <CardTitle>{items.title}</CardTitle>
+                      <CardBody>{items.body}</CardBody>
+                    </Card>
+                  </Col>
+                );
+              })}
             </Row>
           </Col>
           <Col sm="4" className=" ">
