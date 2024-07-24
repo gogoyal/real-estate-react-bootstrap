@@ -15,6 +15,7 @@ import Filter from './Components/Layout/filter';
 import SignIn from './Components/Layout/signin'
 import Footer from './Components/Layout/footer';
 import HouseDetails from './Components/Layout/housedetails';
+import CondoDetails from './Components/Layout/condodetails'
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -39,7 +40,8 @@ function App() {
       <Route path="/dmca" element={<Dmca/>}></Route>
       <Route path="/landing" element={<Landing/>}></Route>
       <Route path="/filter" element={<Filter/>}></Route>
-      <Route path="/housedetails" element={<HouseDetails/>}></Route>
+      <Route path="/housedetails/:id" element={<HouseDetails/>}></Route>
+      <Route path="/condodetails/:id" element={<CondoDetails/>}></Route>
 
        
       </Routes>

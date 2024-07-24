@@ -1,86 +1,129 @@
 [
     {
+        "id":"1",
         "image":"https://www.beachguide.com/beach-colony-beach-colony-of-perdido-e03b-9168487?width=800&height=530",
         "title":"6240 Estero Boulevard UNIT 4 PH, Fort Myers Beach, FL, 33931",
-        "body":"$5,200,000 / 4 BEDS / 5 BATHS"
+        "body":"$5,200,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"Introducing Gulfside Twelve, a luxury collaboration between Dublin Real Estate Investment Group and award-winning designer, Clive Daniel. Set in a “toes in the sand” location with head-on Gulf and sunset views with 180 feet of beachfront, this new collection presents 12 exclusive residences – with the first of four set for completion in spring 2023. Designed for live/work/play, they range from 4,700 to 5,100 square feet with 4 ensuite bedrooms, large terraces, 4.5 baths, plus a flex room that can be used as a theater, office, workout space or 5th bedroom. Clive Daniel-designed furniture packages are also available for purchase in two distinct styles. ",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {"id":"2",
         "image":"https://turquoiseplace.spectrumresorts.com/wp-content/uploads/2019/03/turquoise-place-3-bedroom-condo-balcony.jpg",
         "title":"6230 Estero Boulevard UNIT 402, Fort Myers Beach, FL, 33931",
-        "body":"$5,250,000 / 4 BEDS / 5 BATHS"
+        "body":"$5,250,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":" Embrace the SW Florida lifestyle from every angle. This penthouse unit comes with the option of enjoying full private access to your very own customizable, finished rooftop. This luxe condo features a resort-style pool, cabanas and grilling area. Two-car parking, plus guest parking and storage on the 1st floor complete the fantasy of living on Florida’s Gulf coast. A quiet, secluded beachfront location near Estero Island, between South Fort Myers Beach and Naples, close to shopping, dining, and entertainment.",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {   "id":"3",
         "image":"https://www.smaartvacation.com/wp-content/uploads/2020/03/9N1A1798-scaled.jpg",
         "title":"6230 Estero Boulevard UNIT 401, Fort Myers Beach, FL, 33931",
-        "body":"$5,200,000 / 4 BEDS / 5 BATHS"
+        "body":"$5,200,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"Step into a world where unparalleled luxury meets the tranquil shores of Estero Island. Here, we present Gulfside Twelve, an exclusive collection of residences that redefine beachfront living. Your 5,100+ SF sanctuary, offers a unique blend of sophisticated elegance & serene coastal vistas. Designed for those who seek an intimate connection w/ the sea. Collaborate with a dedicated interior designer to personalize your space, ensuring it reflects your unique style. Expansive outdoor living areas extend the luxury of the indoors to the soothing 180' of beachfront, creating a harmonious blend of comfort & natural beauty w/ amenities that encapsulate the essence of a luxury resort: a magnificent pool, spa, & sun deck, all framed by private cabanas. Step right out onto some of the finest sand & widest beach on the island.",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {   "id":"4",
         "image":"https://www.vacationsperfected.com/wp-content/uploads/2022/02/2-Bedroom-Condos-in-Panama-City-Beach-Florida.jpeg",
         "title":"6230 Estero Boulevard UNIT 101, Fort Myers Beach, FL, 33931",
-        "body":"$4,400,000 / 4 BEDS / 5 BATHS"
+        "body":"$4,400,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"Step into a world where unparalleled luxury meets the tranquil shores of Estero Island. Here, we present Gulfside Twelve, an exclusive collection of residences that redefine beachfront living. Your 4,700+ SF sanctuary, offers a unique blend of sophisticated elegance & serene coastal vistas. Designed for those who seek an intimate connection w/ the sea. Collaborate with a dedicated interior designer to personalize your space, ensuring it reflects your unique style. Expansive outdoor living areas extend the luxury of the indoors to the soothing 180' of beachfront, creating a harmonious blend of comfort & natural beauty w/ amenities that encapsulate the essence of a luxury resort: a magnificent pool, spa, & sun deck, all framed by private cabanas. Step right out onto some of the finest sand & widest beach on the island. ",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {   "id":"5",
         "image":"http://philkeandesigns.com/wp-content/uploads/2017/05/2-1800x1200.jpg",
         "title":"6230 Estero Boulevard UNIT 102, Fort Myers Beach, FL, 33931",
-        "body":"$4,400,000 / 4 BEDS / 5 BATHS"
+        "body":"$4,400,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"Phase One 50% sold out! Gulfside Twelve, a luxury collaboration between Dublin Real Estate Investment Group and award-winning designer, Clive Daniel. Set in a “toes in the sand” location with head-on Gulf and sunset views with 180 feet of beachfront, this new collection presents 12 exclusive residences – with the first of four set for completion in Fall 2023. Designed for live/work/play, they range from 4,700 to 5,100 square feet with 4 ensuite bedrooms, large terraces, 4.5 baths, plus a flex room that can be used as a theater, office, workout space or 5th bedroom. Clive Daniel-designed furniture packages are also available for purchase in two distinct styles. Embrace the SW Florida lifestyle from every angle: take the elevator directly up to your residence, put down your bags and walk out your door, right onto the picturesque white sandy beach! This luxe condo features a resort-style pool, cabanas and grilling area.",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {   "id":"6",
         "image":"https://st.hzcdn.com/simgs/eb118c9403c91d68_4-8721/beach-style-living-room.jpg",
         "title":"6240 Estero Boulevard UNIT 4 PH, Fort Myers Beach, FL, 33931",
-        "body":"$5,200,000 / 4 BEDS / 5 BATHS"
+        "body":"$5,200,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"IMMEDIATE OCCUPANCY! Grandview has just released it's first furnished residences designed by Clive Daniels! Grandview at Bay Beach is now complete and ready for occupancy! Enjoy this limited opportunity to be part of Grandview at Bay Beach, on the southern tip of Estero Island, just a stone's throw from Lover's Key, nestled between Fort Myers & Bonita Springs/Naples, where days begin with glorious sunrises, are spent leisurely shelling, beaching and boating, and end with amazing sunsets over the Gulf of Mexico. Grandview at Bay Beach is the ONLY new construction tower with WALKABILITY to the beach. Grandview is within walking distance to shopping, restaurants & Fish Tale Marina, a full-service marina, and in close proximity to RSW airport. ",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {   "id":"7",
         "image":"https://i.pinimg.com/originals/ee/01/62/ee01623b38fbbef87e08b18271e646ff.jpg",
         "title":"66230 Estero Boulevard UNIT 202, Fort Myers Beach, FL, 33931",
-        "body":"$4,300,000 / 4 BEDS / 5 BATHS"
+        "body":"$4,300,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"IMMEDIATE OCCUPANCY! The ONLY Penthouse residence in the last tower to be built in Waterside at Bay Beach ! The wait is over for new construction on Fort Myers Beach/Estero Island, Florida's Gold Coast. Enjoy this limited opportunity to be part of Grandview at Bay Beach, on the southern tip of Estero Island, just a stone's throw from Lover's Key, nestled between Fort Myers & Bonita Springs/Naples, where days begin with glorious sunrises, are spent leisurely shelling, beaching and boating, and end with amazing sunsets over the Gulf of Mexico. Grandview at Bay Beach is the ONLY new construction tower with WALKABILITY to the beach. Grandview is within walking distance to shopping, restaurants and a full-service marina, and in close proximity to RSW airport.",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {   "id":"8",
         "image":"https://i.pinimg.com/originals/ff/e9/85/ffe9855687d62265d4c67eae3cc11141.jpg",
         "title":"6230 Estero Boulevard UNIT 201, Fort Myers Beach, FL, 33931",
-        "body":"$4,300,000  / 4 BEDS / 5 BATHS"
+        "body":"$4,300,000  / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"IMMEDIATE OCCUPANCY! One of London Bay's 17 remaining residences in the newest and final tower in the gated community of Waterside at Bay Beach Lane. The wait is over for new construction on Fort Myers Beach/Estero Island, Florida's Gold Coast. Enjoy this limited opportunity to be part of Grandview at Bay Beach, on the southern tip of Estero Island, just a stone's throw from Lover's Key, nestled between Fort Myers & Bonita Springs/Naples, where days begin with glorious sunrises, are spent leisurely shelling, beaching and boating, and end with amazing sunsets over the Gulf of Mexico. Grandview at Bay Beach is the ONLY new construction tower with WALKABILITY to the beach. Grandview is within walking distance to shopping, restaurants, a full-service marina, and in close proximity to RSW airport.",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {   "id":"9",
         "image":"https://i.pinimg.com/736x/e7/0e/6d/e70e6d1d6d6e9ac58b97be7e983e4782--condo-living-room-living-spaces.jpg",
         "title":"66230 Estero Boulevard UNIT 202, Fort Myers Beach, FL, 33931",
-        "body":"$4,300,000 / 4 BEDS / 5 BATHS"
+        "body":"$4,300,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"Open for Rentals and Occupancy! GREAT OPPORTUNITY FOR OWNERSHIP ON THE GULF OF MEXICO! Not many 3-Bedroom or larger units are located directly on the Beach. This Unit has Direct Western views of The Gulf and Blue Waters! Should you decide to finance your purchase, pay cash, or complete a 1031 Exchange, your memories in this condo will in every way be Priceless!!! From your Southern views you'll see the morning sun, from your Western views you'll look out to endless miles of blue waters at the Gulf of Mexico, and with your views to the Northwest, you will see the sunset at the end of the day. 3-Bedroom Condo's on the Gulf rarely come up for sale, this 3-Bedroom comes Turnkey Furnished ready to go. ",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {   "id":"10",
         "image":"https://www.beaufort-nc.com/uploads/properties/357629/357629_0.jpg",
         "title":"6230 Estero Boulevard UNIT 302, Fort Myers Beach, FL, 33931",
-        "body":"$4,300,000 / 4 BEDS / 5 BATHS"
+        "body":"$4,300,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"MODEL LEASEBACK OPPORTUNITY! Grandview has just released it's first model designed by Romanza and available for leaseback! Grandview at Bay Beach is the first hi-rise to be completed and ready for occupancy this year! Enjoy this limited opportunity to be part of Grandview at Bay Beach, on the southern tip of Estero Island, just a stone's throw from Lover's Key, nestled between Fort Myers & Bonita Springs/Naples, where days begin with glorious sunrises, are spent leisurely shelling, beaching and boating, and end with amazing sunsets over the Gulf of Mexico. Grandview at Bay Beach is the ONLY new construction tower with WALKABILITY to the beach and is now open! This is truly a limited and unique opportunity with only 17 residences remaining! ",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {   "id":"11",
         "image":"https://www.vacationsperfected.com/wp-content/uploads/2021/02/4-bedroom-condos-in-panama-city-beach.jpeg",
         "title":"6230 Estero Boulevard UNIT 301, Fort Myers Beach, FL, 33931",
-        "body":"$4,300,000 / 4 BEDS / 5 BATHS"
+        "body":"$4,300,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"IMMEDIATE OCCUPANCY! One of London Bay's 17 remaining residences in the newest and now complete tower in the gated community of Waterside at Bay Beach Lane. The wait is over for new construction on Fort Myers Beach/Estero Island, Florida's Gold Coast. Enjoy this limited opportunity to be part of Grandview at Bay Beach, on the southern tip of Estero Island, just a stone's throw from Lover's Key, nestled between Fort Myers & Bonita Springs/Naples, where days begin with glorious sunrises, are spent leisurely shelling, beaching and boating, and end with amazing sunsets over the Gulf of Mexico. Grandview at Bay Beach is the ONLY new construction tower with WALKABILITY to the beach. Grandview is within walking distance to shopping, restaurants, a full-service marina, and in close proximity to RSW airport.",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {   "id":"12",
         "image":"https://secure.beachrentalsatnavarre.com/RNS/UnitImages/8477%201001%20CR-6844-HDR.jpg",
         "title":"6240 Estero Boulevard UNIT 1, Fort Myers Beach, FL, 33931",
-        "body":"$4,100,000 / 4 BEDS / 5 BATHS"
+        "body":"$4,100,000 / 4 BEDS / 5 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"IMMEDIATE OCCUPANCY! One of London Bay's 17 remaining residences in the newest and now complete tower in the gated community of Waterside at Bay Beach Lane. The wait is over for new construction on Fort Myers Beach/Estero Island, Florida's Gold Coast. Enjoy this limited opportunity to be part of Grandview at Bay Beach, on the southern tip of Estero Island, just a stone's throw from Lover's Key, nestled between Fort Myers & Bonita Springs/Naples, where days begin with glorious sunrises, are spent leisurely shelling, beaching and boating, and end with amazing sunsets over the Gulf of Mexico. Grandview at Bay Beach is the ONLY new construction tower with WALKABILITY to the beach. Grandview is within walking distance to shopping, restaurants, a full-service marina, and in close proximity to RSW airport.",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {"id":"13",
         "image":"https://cdn.suwalls.com/wallpapers/beaches/lovely-beach-house-20447-2560x1600.jpg",
         "title":"4142 Bay Beach Lane UNIT 301, Fort Myers Beach, FL, 33931",
-        "body":"$3,059,000 / 3 BEDS / 4 BATHS"
+        "body":"$3,059,000 / 3 BEDS / 4 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"New building completed fall 2023!!! Rarely available 01 unit in Grandview! No wait and move-in ready. The 01 stack affords best views of Estero Bay out to the Gulf. Enjoy bright mornings on the lanai to start your day! This stunning condo is loaded with high end upgrades including Designer Choice custom flooring, induction cooktop, hurricane shutters, custom window treatments, custom ceiling fans, quartz tops, the list goes on. Grandview at Bay Beach sites at the tip of Bay Beach, only 58 units, gated for privacy, and the only new construction tower on Fort Myers Beach. Surround yourself in true luxury living! Professional photos coming soon!",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     },
-    {
+    {    "id":"14",
         "image":"https://media.blogto.com/articles/20171221-cow-wide.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70",
         "title":"4142 Bay Beach Lane, Fort Myers Beach, FL, 33931",
-        "body":"$2,795,000 / 3 BEDS / 4 BATHS"
+        "body":"$2,795,000 / 3 BEDS / 4 BATHS",
+        "highlights":["Gymnasium","Power Backup"],
+        "description":"New building completed fall 2023!!! Rarely available 01 unit in Grandview! No wait and move-in ready. The 01 stack affords best views of Estero Bay out to the Gulf. Enjoy bright mornings on the lanai to start your day! This stunning condo is loaded with high end upgrades including Designer Choice custom flooring, induction cooktop, hurricane shutters, custom window treatments, custom ceiling fans, quartz tops, the list goes on. Grandview at Bay Beach sites at the tip of Bay Beach, only 58 units, gated for privacy, and the only new construction tower on Fort Myers Beach. Surround yourself in true luxury living! Professional photos coming soon!",
+        "amenities":[{"name" : "Daily Cleaning" ,"icon": "fa-broom fa-lg"},{"name" : "Servent Room" ,"icon": "fa-person-booth"},{"name":"Car Parking","icon":" fa-car"}]
 
     }
 

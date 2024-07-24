@@ -1,11 +1,11 @@
-import { Card, Container, Row, Col ,Image } from "react-bootstrap";
-import { Link } from 'react-router-dom';
+import { Card, Container, Row, Col, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import GIF from "./giphy.webp";
 export default function Home() {
   const getImages = require("../details.json");
-  
+
   return (
     <>
-    
       <div
         id="carouselExampleIndicators"
         className="carousel slide carousel-fade"
@@ -40,7 +40,7 @@ export default function Home() {
               className="d-block w-100 caraosel"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
                 Some representative placeholder content for the first slide.
@@ -49,11 +49,11 @@ export default function Home() {
           </div>
           <div className="carousel-item">
             <Image
-              src="https://saparealestate.mu/wp-content/uploads/2020/02/10.jpg"
+              src="https://www.architectureartdesigns.com/wp-content/uploads/2015/07/713.jpg"
               className="d-block w-100 caraosel"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
                 Some representative placeholder content for the first slide.
@@ -66,7 +66,7 @@ export default function Home() {
               className="d-block w-100 caraosel"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-none d-md-block">
               <h5>third slide label</h5>
               <p>
                 Some representative placeholder content for the first slide.
@@ -99,9 +99,31 @@ export default function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-        
-    
+      <Container fluid className=" " style={{backgroundColor:'#8cccd4'}}>
+        <Row className=" p-5">
+          <Col sm="6" className="text-start text-white">
+            <h2>Choice Real Estate Company Since 1980</h2>
+            <p>
+              <b>Loffreno Real Estate, Inc. Realtors </b> has been serving
+              buyers and sellers for over 40 years. We serve all of SW Florida
+              from our local office on Fort Myers Beach.{" "}
+            </p>
+            <p>
+              From cozy island cottages to newer contemporary waterfront homes,
+              Studio condos on the beach to exceptional penthouse units, we sell
+              them all. Our family owned & operated company continues today with
+              a dozen top notch Realtors. Contact us to work with one of our
+              professionals...You'll be glad you did!.
+            </p>
+          </Col>
+          <Col sm="6 text-center">
+            <Image src={GIF}></Image>
+          </Col>
+        </Row>
+      </Container>
+
       <Container>
+        <h1 className="p-4">RECENT ADDITIONS</h1>
         <Row>
           {getImages.map((items, index) => {
             return (

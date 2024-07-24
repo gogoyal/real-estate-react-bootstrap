@@ -9,19 +9,13 @@ import {
   CardImg,
 } from "react-bootstrap";
 import AboutCard from "./aboutuscard";
-import Condo1 from "./condo1.jpg";
-import Condo2 from "./condo2.jpg";
+import { Link } from "react-router-dom";
+// import Condo1 from "./condo1.jpg";
+// import Condo2 from "./condo2.jpg";
 
 export default function Filter() {
   const condoDetails = require("../Layout/condos.json");
-  const images = [
-    {
-      img: Condo1,
-    },
-    {
-      img: Condo2,
-    },
-  ];
+
   return (
     <>
       <Container fluid className="">
@@ -66,16 +60,14 @@ export default function Filter() {
                 return (
                   <Col key={index} lg="6">
                     <Card className="rounded-0 m-1 border-0 p-2">
-                      
-                          <CardImg
-                            variant="top"
-                            src={items.image}
-                            className=" cardimg"
-                          ></CardImg>
-                      
-
+                      <CardImg
+                        variant="top"
+                        src={items.image}
+                        className=" cardimg"
+                      ></CardImg>
                       <CardTitle>{items.title}</CardTitle>
                       <CardBody>{items.body}</CardBody>
+                      <Link  to={"/condodetails/" + items.id} className="btn btn-dark rounded-0">Details</Link>
                     </Card>
                   </Col>
                 );

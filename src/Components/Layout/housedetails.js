@@ -2,7 +2,7 @@ import { Container, Row, Col, Image, Button, } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
 export default function HouseDetails(props) {
-  const { ids } = props;
+
   const detail = require("../details.json");
   const id = useParams("id") || null;
 
