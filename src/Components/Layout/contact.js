@@ -1,5 +1,65 @@
 import { Image, Container, Col, Row, Form, Button } from "react-bootstrap";
+import $ from "jquery";
+import "jquery-validation";
 export default function Contact() {
+
+  
+  $(document).ready(function(){
+    $("#form").validate({
+      rules:{
+         email:{
+          required:true,
+          email:true
+         },
+       
+         firstname:{
+          required:true,
+         },
+         message:{
+          required:true,
+         },
+         lastname:{
+          required:true,
+         },
+        
+        number:{
+          required:true,
+          minlength:10
+         },
+       
+      },
+      messages:{
+          email:{
+              required:'enter email here',
+              email:'enter correct mail',
+             },
+           
+             firstname:{
+              required:'enter name here',
+             },
+             lastname:{
+              required:'enter name here',
+             },
+             message:{
+              required:'enter text here',
+             },
+           
+            number:{
+              required:'enter your contact number',
+               minlength:'enter valid contact'
+             },
+           
+      },
+      errorPlacement:function(error, element){
+      console.log(error);
+      const $inputName = element.attr("name");
+      $('#'+$inputName+'_error').append(error);
+      },
+      submitHandler:function(form){
+          alert('submitted succesfully');
+      }
+    })
+  })
   return (
     <>
       <Container fluid className="contactHeight">
@@ -8,7 +68,7 @@ export default function Contact() {
             <b>Contact Us</b>
           </h1>
           <Col md="6" className="d-flex align-items-center">
-            <Form>
+            <Form id="form">
               <Row className="m-3">
                 <Col className="" lg={6}>
                   <Form.Group className="mb-3">
@@ -20,8 +80,11 @@ export default function Contact() {
                       placeholder="Enter First Name"
                       className="border border-2 p-3 rounded-0"
                       style={{ backgroundColor: "#f4f4f3" }}
+                      name="firstname"
+                      id="firstname"
                     />
                   </Form.Group>
+                  <span id="firstname_error" class="text-danger"></span>
                 </Col>
                 <Col className="" lg={6}>
                   <Form.Group className="mb-3">
@@ -33,8 +96,11 @@ export default function Contact() {
                       placeholder="Enter last Name"
                       className="border border-2 p-3 rounded-0"
                       style={{ backgroundColor: "#f4f4f3" }}
+                       name="lastname"
+                      id="lastname"
                     />
                   </Form.Group>
+                  <span id="lastname_error" class="text-danger"></span>
                 </Col>
                 <Col className="" lg={6}>
                   {" "}
@@ -47,8 +113,11 @@ export default function Contact() {
                       placeholder="example@gmail.com"
                       className="border border-2 p-3 rounded-0"
                       style={{ backgroundColor: "#f4f4f3" }}
+                       name="email"
+                      id="email"
                     />
                   </Form.Group>
+                  <span id="email_error" class="text-danger"></span>
                 </Col>
                 <Col className="" lg={6}>
                   {" "}
@@ -61,8 +130,11 @@ export default function Contact() {
                       placeholder="Enter Number Here"
                       className="border border-2 p-3 rounded-0"
                       style={{ backgroundColor: "#f4f4f3" }}
+                       name="number"
+                      id="number"
                     />
                   </Form.Group>
+                  <span id="number_error" class="text-danger"></span>
                 </Col>
                 <Col className="" lg={12}>
                   <Form.Group className="mb-3 mt-3">
@@ -71,8 +143,11 @@ export default function Contact() {
                       placeholder="Your Message"
                       className="border border-2 p-3 rounded-0"
                       style={{ backgroundColor: "#f4f4f3" }}
+                       name="message"
+                      id="message"
                     />
                   </Form.Group>
+                  <span id="message_error" class="text-danger"></span>
                 </Col>
                 <div className="d-grid gap-2">
                   <Button

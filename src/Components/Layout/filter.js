@@ -7,6 +7,7 @@ import {
   CardTitle,
   CardBody,
   CardImg,
+  Button,
 } from "react-bootstrap";
 import AboutCard from "./aboutuscard";
 import { Link } from "react-router-dom";
@@ -15,6 +16,7 @@ import { Link } from "react-router-dom";
 
 export default function Filter() {
   const condoDetails = require("../Layout/condos.json");
+
 
   return (
     <>
@@ -25,35 +27,13 @@ export default function Filter() {
           </div>
           <Col sm="8" className=" p-5">
             <div className="d-flex flex-row">
-              <Dropdown>
-                <Dropdown.Toggle
-                  variant="none"
-                  className="rounded-0 border-bottom border-0"
-                >
-                  Select Filter
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu className="border-0">
-                  <Dropdown.Item href="#/action-1">Price</Dropdown.Item>
-                  <Dropdown.Item href="#/action-1">Baths</Dropdown.Item>
-                  <Dropdown.Item href="#/action-1">Year Built</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Beds</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Sqft</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>{" "}
-              <Dropdown>
-                <Dropdown.Toggle
-                  variant="none"
-                  className="rounded-0 border-bottom border-0"
-                >
-                  Ascending
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu className="border-0">
-                  <Dropdown.Item href="#/action-1">Ascending</Dropdown.Item>
-                  <Dropdown.Item href="#/action-1">Decsending</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>{" "}
+             <Button className="border bg-success rounded-1 p-1 text-white" onClick={()=>{
+              condoDetails = condoDetails.filter(
+               
+              )
+              console.log(condoDetails);
+             }}><i class="fa-solid fa-star"></i> Top Rated</Button>
+             
             </div>
             <Row className="p-3 m-4">
               {condoDetails.map((items, index) => {
@@ -66,8 +46,11 @@ export default function Filter() {
                         className=" cardimg"
                       ></CardImg>
                       <CardTitle>{items.title}</CardTitle>
-                      <CardBody>{items.body}</CardBody>
+                      <CardBody className="d-flex justify-content-between">{items.body}
+                      <span className="border bg-success rounded-1 p-1 text-white"><i class="fa-solid fa-star"></i> {items.rating}</span>
+                      </CardBody>
                       <Link  to={"/condodetails/" + items.id} className="btn btn-dark rounded-0">Details</Link>
+                      
                     </Card>
                   </Col>
                 );

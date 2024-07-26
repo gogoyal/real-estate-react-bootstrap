@@ -48,16 +48,25 @@ export default function CondoDetails(props){
           </Col>
           <Col md={7}>
             <Image src={Detail(id.id).image} fluid />
+            <Row>
+              <h3>{Detail(id.id).body}</h3>
+            </Row>
             <Row className="m-1">
               <Button className="btn-lg btn-dark rounded-1 mt-2">
                 Contact Seller..
               </Button>
             </Row>
+           
           </Col>
 
           <Col md={5} className="">
-            <Row>
-              <h3>{Detail(id.id).body}</h3>
+            
+            <Row className="border border-2 p-3 mb-2">
+              <Col sm={12} className="d-flex flex-row justify-content-evenly">
+                <h4 style={{ color: "#f38758" }}>Rating given by our experts:</h4>
+                <h3>{Detail(id.id).rating}</h3>
+              </Col>
+              
             </Row>
             <Row className="border border-2 p-3 mb-2">
               <Col sm={12} className="">
