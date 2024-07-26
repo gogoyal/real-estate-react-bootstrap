@@ -11,12 +11,67 @@ import {
 } from "react-bootstrap";
 import AboutCard from "./aboutuscard";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 // import Condo1 from "./condo1.jpg";
 // import Condo2 from "./condo2.jpg";
 
 export default function Filter() {
   const condoDetails = require("../Layout/condos.json");
+  const [getRating, setRating] = useState("");
 
+  const getCardDesign = (index, items, getRating) => {
+    if (getRating) {
+      return (
+        <Col key={index} lg="6">
+          <Card className="rounded-0 m-1 border-0 p-2">
+            <CardImg
+              variant="top"
+              src={items.image}
+              className=" cardimg"
+            ></CardImg>
+            <CardTitle>{items.title}</CardTitle>
+            <CardBody className="d-flex justify-content-between">
+              {items.body}
+              <span className="border bg-success rounded-1 p-1 text-white">
+                <i className="fa-solid fa-star"></i> {items.rating}
+              </span>
+            </CardBody>
+            <Link
+              to={"/condodetails/" + items.id}
+              className="btn btn-dark rounded-0"
+            >
+              Details
+            </Link>
+          </Card>
+        </Col>
+      );
+    } else {
+      return (
+        <Col key={index} lg="6">
+          <Card className="rounded-0 m-1 border-0 p-2">
+            <CardImg
+              variant="top"
+              src={items.image}
+              className=" cardimg"
+            ></CardImg>
+            <CardTitle>{items.title}</CardTitle>
+            <CardBody className="d-flex justify-content-between">
+              {items.body}
+              <span className="border bg-success rounded-1 p-1 text-white">
+                <i className="fa-solid fa-star"></i> {items.rating}
+              </span>
+            </CardBody>
+            <Link
+              to={"/condodetails/" + items.id}
+              className="btn btn-dark rounded-0"
+            >
+              Details
+            </Link>
+          </Card>
+        </Col>
+      );
+    }
+  };
 
   return (
     <>
@@ -27,37 +82,22 @@ export default function Filter() {
           </div>
           <Col sm="8" className=" p-5">
             <div className="d-flex flex-row">
-             <Button className="border bg-success rounded-1 p-1 text-white" onClick={()=>{
-              condoDetails = condoDetails.filter(
-               
-              )
-              console.log(condoDetails);
-             }}><i class="fa-solid fa-star"></i> Top Rated</Button>
-             
+              <select className="form-select" aria-label="Default select example"  style={{maxWidth:'200px'}} onClick={()=>{
+              
+              }}>
+                <option>Ratings</option>
+                <option value="4.5">above 4.5</option>
+                <option value="4">above 4</option>
+                <option value="3.5">above 3.5</option>
+              </select>
             </div>
             <Row className="p-3 m-4">
-              {condoDetails.map((items, index) => {
-                return (
-                  <Col key={index} lg="6">
-                    <Card className="rounded-0 m-1 border-0 p-2">
-                      <CardImg
-                        variant="top"
-                        src={items.image}
-                        className=" cardimg"
-                      ></CardImg>
-                      <CardTitle>{items.title}</CardTitle>
-                      <CardBody className="d-flex justify-content-between">{items.body}
-                      <span className="border bg-success rounded-1 p-1 text-white"><i class="fa-solid fa-star"></i> {items.rating}</span>
-                      </CardBody>
-                      <Link  to={"/condodetails/" + items.id} className="btn btn-dark rounded-0">Details</Link>
-                      
-                    </Card>
-                  </Col>
-                );
-              })}
+              {condoDetails.map((items, index) =>
+                getCardDesign(index, items, getRating)
+              )}
             </Row>
           </Col>
-          <Col sm="4" className=" ">
+          <Col sm="4" className="">
             <AboutCard />
           </Col>
         </Row>

@@ -1,8 +1,72 @@
 import { Image, Container, Row, Col, Form, Button } from "react-bootstrap";
+import $ from "jquery";
+import "jquery-validation";
 import AboutCard from "./aboutuscard";
 import logo from "./logo.png";
 import Growth from "./Growth.jpg";
 export default function About() {
+  $(document).ready(function(){
+    $("#form").validate({
+      rules:{
+         email:{
+          required:true,
+          email:true
+         },
+       
+         firstname:{
+          required:true,
+         },
+         message:{
+          required:true,
+         },
+         lastname:{
+          required:true,
+         },
+        
+        number:{
+          required:true,
+          minlength:10
+         },
+         location:{
+          required:true,
+         }
+       
+      },
+      messages:{
+          email:{
+              required:'enter email here',
+              email:'enter correct mail',
+             },
+           
+             firstname:{
+              required:'enter name here',
+             },
+             lastname:{
+              required:'enter name here',
+             },
+             message:{
+              required:'enter text here',
+             },
+           
+            number:{
+              required:'enter your contact number',
+               minlength:'enter valid contact'
+             },
+             location:{
+              required:'enter location here',
+             },
+           
+      },
+      errorPlacement:function(error, element){
+      console.log(error);
+      const $inputName = element.attr("name");
+      $('#'+$inputName+'_error').append(error);
+      },
+      submitHandler:function(form){
+          alert('submitted succesfully');
+      }
+    })
+  })
   return (
     <>
       <Container className="p-3">
@@ -101,7 +165,7 @@ export default function About() {
             <h3 className="p-3 text-center">
               <b>Have a Question ?</b>
             </h3>
-            <Form>
+            <Form id="form">
               <Form.Group className="mb-4" controlId="formBasicEmail">
                 <Form.Label className="fs-5">First Name :</Form.Label>
                 <Form.Control
@@ -109,7 +173,10 @@ export default function About() {
                   placeholder=""
                   className="rounded-0 p-2 "
                   style={{ backgroundColor: "#ebebea" }}
+                  id="firstname"
+                  name="firstname"
                 />
+                 <span id="firstname_error" class="text-danger"></span>
               </Form.Group>
               <Form.Group className="mb-4" controlId="formBasicEmail">
                 <Form.Label className="fs-5">Last Name :</Form.Label>
@@ -118,7 +185,10 @@ export default function About() {
                   placeholder=""
                   className="rounded-0 p-2"
                   style={{ backgroundColor: "#ebebea" }}
+                  id="lastname"
+                  name="lastname"
                 />
+                 <span id="lastname_error" class="text-danger"></span>
               </Form.Group>
               <Form.Group className="mb-4" controlId="formBasicEmail">
                 <Form.Label className="fs-5">Phone Number :</Form.Label>
@@ -127,7 +197,10 @@ export default function About() {
                   placeholder="Phone"
                   className="rounded-0 p-2"
                   style={{ backgroundColor: "#ebebea" }}
+                  id="number"
+                  name="number"
                 />
+                 <span id="number_error" class="text-danger"></span>
               </Form.Group>
               <Form.Group className="mb-4" controlId="formBasicEmail">
                 <Form.Control
@@ -135,7 +208,10 @@ export default function About() {
                   placeholder="Email address"
                   className="rounded-0 p-2"
                   style={{ backgroundColor: "#ebebea" }}
+                  id="email"
+                  name="email"
                 />
+                       <span id="email_error" class="text-danger"></span>
               </Form.Group>
               <Form.Group className="mb-4" controlId="formBasicEmail">
                 <Form.Label className="fs-5">Location/Address :</Form.Label>
@@ -144,7 +220,10 @@ export default function About() {
                   placeholder=""
                   className="rounded-0 p-2"
                   style={{ backgroundColor: "#ebebea" }}
+                  id="location"
+                  name="location"
                 />
+                <span id="location_error" class="text-danger"></span>
               </Form.Group>
               <Form.Group className="mb-4" controlId="formBasicEmail">
                 <Form.Control
@@ -152,7 +231,10 @@ export default function About() {
                   placeholder="Message"
                   className="rounded-0 p-2"
                   style={{ backgroundColor: "#ebebea" }}
+                  id="message"
+                  name="message"
                 />
+                 <span id="message_error" class="text-danger"></span>
               </Form.Group>
               <div className="d-grid gap-2">
                 <Button
