@@ -17,9 +17,10 @@ import { useState } from "react";
 
 export default function Filter() {
   const condoDetails = require("../Layout/condos.json");
-  const [rating, setRating] = useState("");
+  const [getRating, setRating] = useState("");
 
-  const getCardDesign = (index, items, Rating) => {
+  const getCardDesign = (index, items, getRating) => {
+    if (getRating) {
       return (
         <Col key={index} lg="6">
           <Card className="rounded-0 m-1 border-0 p-2">
@@ -44,9 +45,33 @@ export default function Filter() {
           </Card>
         </Col>
       );
-    } 
-  
-  
+    } else {
+      return (
+        <Col key={index} lg="6">
+          <Card className="rounded-0 m-1 border-0 p-2">
+            <CardImg
+              variant="top"
+              src={items.image}
+              className=" cardimg"
+            ></CardImg>
+            <CardTitle>{items.title}</CardTitle>
+            <CardBody className="d-flex justify-content-between">
+              {items.body}
+              <span className="border bg-success rounded-1 p-1 text-white">
+                <i className="fa-solid fa-star"></i> {items.rating}
+              </span>
+            </CardBody>
+            <Link
+              to={"/condodetails/" + items.id}
+              className="btn btn-dark rounded-0"
+            >
+              Details
+            </Link>
+          </Card>
+        </Col>
+      );
+    }
+  };
 
   return (
     <>
@@ -57,14 +82,10 @@ export default function Filter() {
           </div>
           <Col sm="8" className=" p-5">
             <div className="d-flex flex-row">
-              <select className="form-select" aria-label="Default select example"  style={{maxWidth:'200px'}} onChange={(e)=>{
-                 const selectedrating = e.target.value;
-                 console.log(selectedrating);
-                 setRating(selectedrating);
-                 console.log(rating);
-               
+              <select className="form-select" aria-label="Default select example"  style={{maxWidth:'200px'}} onClick={()=>{
+              
               }}>
-                <option value="0">Ratings</option>
+                <option>Ratings</option>
                 <option value="4.5">above 4.5</option>
                 <option value="4">above 4</option>
                 <option value="3.5">above 3.5</option>
@@ -72,7 +93,7 @@ export default function Filter() {
             </div>
             <Row className="p-3 m-4">
               {condoDetails.map((items, index) =>
-                getCardDesign(index, items, rating)
+                getCardDesign(index, items, getRating)
               )}
             </Row>
           </Col>
@@ -83,5 +104,4 @@ export default function Filter() {
       </Container>
     </>
   );
-
 }
