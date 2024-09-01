@@ -13,17 +13,12 @@ export default function SignUp() {
           required:true,
           minlength:6, 
          },
-         firstname:{
+         username:{
           required:true,
          },
       
-         lastname:{
-          required:true,
-         },
-         confirmpassword:{
-          required:true,
-          equalTo: '#password'
-         },
+         
+        
        
        
       },
@@ -37,17 +32,10 @@ export default function SignUp() {
               minlength:'atleast 6 characters should be there', 
              },
               
-             firstname:{
+             username:{
               required:'enter name here',
              },
-             lastname:{
-              required:'enter name here',
-             },
-             confirmpassword:{
-              required:'re-enter password here',
-              equalTo:'the password is not same'
-              
-             },
+            
            
            
            
@@ -70,23 +58,22 @@ export default function SignUp() {
           <Form.Control
             className="mb-4 p-3 rounded-0"
             type="text"
-            placeholder="First Name"
+            placeholder=" Username"
             style={{ backgroundColor: "#ebebea" }}
-             id="firstname"
-            name="firstname"
+             id="username"
+            name="username"
           />
-          <span id="firstname_error" class="text-danger"></span>
+          <span id="username_error" class="text-danger"></span>
 
 
           <Form.Control
             className="mb-4 p-3 rounded-0"
-            type="Last Name"
-            placeholder="Last Name"
+            type="text"
+            placeholder="Account Type"
             style={{ backgroundColor: "#ebebea" }}
-              id="lastname"
-            name="lastname"
+            
           />
-              <span id="lastname_error" class="text-danger"></span>
+             
 
           <Form.Control
             className="mb-4 p-3 rounded-0"
@@ -119,14 +106,7 @@ export default function SignUp() {
             </ul>
           </div>
 
-          <Form.Control
-            className="mb-4 p-3 rounded-0"
-            type="password"
-            placeholder="Confirm Password"
-            style={{ backgroundColor: "#ebebea" }}
-             id="confirmpassword"
-            name="confirmpassword"
-          />
+        
           <span id="confirmpassword_error" class="text-danger"></span>
           <div className="text-center">
             <Button

@@ -36,7 +36,7 @@ export default function Home() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <Image
-              src="https://i.pinimg.com/originals/cc/c1/c5/ccc1c5c5d52a2dbc1be00ccb81268e08.jpg"
+              src="https://i0.wp.com/breathing.co.in/wp-content/uploads/2021/11/blog-oct13-1080x630-1.jpg?w=1080&ssl=1"
               className="d-block w-100 caraosel"
               alt="..."
             />
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
           <div className="carousel-item">
             <Image
-              src="https://www.architectureartdesigns.com/wp-content/uploads/2015/07/713.jpg"
+              src="https://api.infinityfit.io/storage/d/b/1/db1347ba08da549fe017f3f5c77cae20.jpeg?v=1"
               className="d-block w-100 caraosel"
               alt="..."
             />
@@ -62,7 +62,7 @@ export default function Home() {
           </div>
           <div className="carousel-item">
             <Image
-              src="https://www.mavericksinvitational.com/wp-content/uploads/2020/05/Beachfront-1024x512.jpg"
+              src="https://i.ytimg.com/vi/rK4jRPBx_wY/maxresdefault.jpg"
               className="d-block w-100 caraosel"
               alt="..."
             />
@@ -99,7 +99,7 @@ export default function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <Container fluid className=" " style={{backgroundColor:'#8cccd4'}}>
+      <Container fluid className=" " style={{ backgroundColor: "#8cccd4" }}>
         <Row className=" p-5">
           <Col sm="6" className="text-start text-white">
             <h2>Choice Real Estate Company Since 1980</h2>
@@ -120,6 +120,24 @@ export default function Home() {
             <Image src={GIF}></Image>
           </Col>
         </Row>
+      </Container>
+      {/* <Container fluid className="">
+        <div fluid className="text-center text-white exercise d-flex align-items-center justify-content-center flex-column">
+          <h1 className="display-2 fw-bold">UNLIMITED VARIETY</h1>
+          <h1 className=" display-1 fw-bold ">
+            <a href="./signup" className="btn btn-lg bg-white text-dark ">
+              Sign Up for Free
+            </a>
+          </h1>
+        </div>
+      </Container> */}
+      <Container  className="exercise text-center text-white d-flex align-items-center justify-content-center flex-column">
+      <h1 className="display-2 fw-bold">UNLIMITED VARIETY</h1>
+          <h1 className=" display-1 fw-bold ">
+            <a href="./signup" className="btn btn-lg bg-white text-dark ">
+              Sign Up for Free
+            </a>
+          </h1>
       </Container>
 
       <Container>
