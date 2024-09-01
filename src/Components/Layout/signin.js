@@ -71,9 +71,6 @@ export default function SignIn() {
             >
               Sign In
             </Button>
-            <a className="d-block link-dark mt-4" href="/forgetpassword">
-            Forgot your password ?
-            </a>
             <a className="d-block link-dark mt-4" href="/Signup">
             Create an account
             </a>
