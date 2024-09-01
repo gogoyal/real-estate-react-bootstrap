@@ -13,7 +13,7 @@ import Dmca from './Components/Layout/dmca';
 import Landing from './Components/Layout/landing';
 import Filter from './Components/Layout/filter';
 import SignIn from './Components/Layout/signin'
-import Custom from './Components/Layout/custom'
+
 import Footer from './Components/Layout/footer';
 import HouseDetails from './Components/Layout/housedetails';
 import CondoDetails from './Components/Layout/condodetails'
@@ -43,7 +43,7 @@ function App() {
       <Route path="/filter" element={<Filter/>}></Route>
       <Route path="/housedetails/:id" element={<HouseDetails/>}></Route>
       <Route path="/condodetails/:id" element={<CondoDetails/>}></Route>
-      <Route path="/custom" element={<Custom/>}></Route>
+      
 
        
       </Routes>

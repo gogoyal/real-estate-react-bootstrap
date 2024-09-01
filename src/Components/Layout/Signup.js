@@ -13,7 +13,10 @@ export default function SignUp() {
           required:true,
           minlength:6, 
          },
-         username:{
+         firstname:{
+          required:true,
+         },
+         lastname:{
           required:true,
          },
       
@@ -32,7 +35,10 @@ export default function SignUp() {
               minlength:'atleast 6 characters should be there', 
              },
               
-             username:{
+             firstname:{
+              required:'enter name here',
+             },
+             lastname:{
               required:'enter name here',
              },
             
@@ -58,21 +64,22 @@ export default function SignUp() {
           <Form.Control
             className="mb-4 p-3 rounded-0"
             type="text"
-            placeholder=" Username"
+            placeholder=" First name"
             style={{ backgroundColor: "#ebebea" }}
-             id="username"
-            name="username"
+             id="firstname"
+            name="firstname"
           />
-          <span id="username_error" class="text-danger"></span>
-
-
+          <span id="firstname_error" class="text-danger"></span>
           <Form.Control
             className="mb-4 p-3 rounded-0"
             type="text"
-            placeholder="Account Type"
+            placeholder="Last name"
             style={{ backgroundColor: "#ebebea" }}
-            
+             id="lastname"
+            name="lastname"
           />
+          <span id="lastname_error" class="text-danger"></span>
+
              
 
           <Form.Control

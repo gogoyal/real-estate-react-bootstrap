@@ -131,14 +131,14 @@ export default function Home() {
           </h1>
         </div>
       </Container> */}
-      <Container  className="exercise text-center text-white d-flex align-items-center justify-content-center flex-column">
+      {/* <Container  className="exercise text-center text-white d-flex align-items-center justify-content-center flex-column">
       <h1 className="display-2 fw-bold">UNLIMITED VARIETY</h1>
           <h1 className=" display-1 fw-bold ">
             <a href="./signup" className="btn btn-lg bg-white text-dark ">
               Sign Up for Free
             </a>
           </h1>
-      </Container>
+      </Container> */}
 
       <Container>
         <h1 className="p-4">RECENT ADDITIONS</h1>

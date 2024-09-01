@@ -31,27 +31,25 @@ export default function NavBar() {
               <Nav.Link href="/home" className="text-white">
                 Home
               </Nav.Link>
-              {/* <Nav.Link href="/premium" className="text-white">
+              <Nav.Link href="/premium" className="text-white">
                 Premium
-              </Nav.Link> */}
+              </Nav.Link>
               <Nav.Link href="/about" className="text-white">
                 About
               </Nav.Link>
               <Nav.Link href="/contact" className="text-white">
                 Contact us
               </Nav.Link>
-              {/* <Nav.Link href="/filter" className="text-white">
+              <Nav.Link href="/filter" className="text-white">
                 Filter By Name
-              </Nav.Link> */}
-              <Nav.Link href="/custom" className="text-white">
-                Custom Workout
               </Nav.Link>
+             
               <NavDropdown title="Sign Up" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/Signup">Sign Up</NavDropdown.Item>
                 <NavDropdown.Item href="/signin">Sign In</NavDropdown.Item>
-                {/* <NavDropdown.Item href="/evaluation">
+                <NavDropdown.Item href="/evaluation">
                   Property Evauluation
-                </NavDropdown.Item> */}
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">LogOut</NavDropdown.Item>
               </NavDropdown>
